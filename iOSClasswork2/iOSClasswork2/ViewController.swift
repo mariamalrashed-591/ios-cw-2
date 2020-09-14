@@ -21,9 +21,54 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         // MARK: - 1️⃣ emojiArray  الي  animal قم باضافه متغير
+         
+        emojiArray.append(animal)
         
-        
-        
+        if animal == "قطه" {
+               emojiArray.append("🐱")
+           }
+           else if animal == "كلب" {
+                      emojiArray.append("🐶")
+                  }
+           else if  animal == "فأر" {
+                      emojiArray.append("🐭")
+                  }
+           else if animal == "ثعلب" {
+                      emojiArray.append("🦊")
+                  }
+           else if animal == "دب" {
+                      emojiArray.append("🐻")
+                  }
+           else if animal == "باندا" {
+                      emojiArray.append("🐼")
+                  }
+           else if animal == "كوالا" {
+                      emojiArray.append("🐨")
+                  }
+           else if animal == "نمر"{
+                      emojiArray.append("🐯")
+                  }
+           else if animal == "اسد"{
+                      emojiArray.append("🦁")
+                  }
+           else if animal == "بقرة" {
+                      emojiArray.append("🐮")
+                  }
+           else if animal == "خنزير" {
+                      emojiArray.append("🐷")
+                  }
+           
+           else if animal == "ضفدع" {
+                      emojiArray.append("🐸")
+                  }
+           
+           else if animal == "قرد" {
+                      emojiArray.append("🐵")
+                  }
+           else {
+               emojiArray.append("❓")
+           }
+           
         
         
         
@@ -36,9 +81,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         {
             animalEmojiLabel.text! += label
         }
-        /// **BONUS**: 🎁 قم بمسح مكونات المصفوفة بعد عرضها
+        /// **BONUS**: 🎁قم بسح مكونات المصفوفة بعد عرضها
    
-    
+        emojiArray.removeAll()
+        
+        
         
         
         
